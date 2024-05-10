@@ -1,0 +1,165 @@
+ [12:22 PM, 11/4/2023] 💛arunksc❤️: "ssh devops@192.168.1.121" for ubuntu user (start vm in virtual box) and connect in the  gitbash
+[12:24 PM, 11/4/2023] 💛arunksc❤️: "ip addre show" then we will get 1.121 i
+  
+  *****history | awk '{$1=""; print $0}' | sed -e 's/^[ \t]*//' | sort -u****   and **history | awk '{print $2,$3,$4,$5}' | sort -u | cat -n **** with line number also main command for
+       want to get the unique command + executable commands only.
+   ls 
+   ls -l
+   ls -lart
+   ls dev/
+   ls bakupdir/
+   ls ops/
+   history | grep 'ls'
+   history | grep 'cat' mv cp 
+   history | cat n (display command history by line)
+   mv devopsfile2.txt dev/             (for the move we can use the -r coz its directory) -r for directory while rm, cp,mv
+   cp source_file destination_file  (you can move or copey more than one file also)
+   cd dirname
+   cat /vi-vim
+   touchpath
+   touch filename
+   touch devops{1..5}.txt
+   mkdir dev1{1..10}.txt
+history | less       (move the page you can type space bar and last q)
+vi or vim (press i write esc q or wq!)
+
+
+
+history | awk '{print $2,$3,$4,$5}' | sort -u | cat -n------
+ 1  cat authorized_keys
+     2  cat history.txt
+     3  cat mobile1.txt
+     4  cat .profile
+     5  cat testfile.txt
+     6  cd .
+     7  cd ..
+     8  cd ../
+     9  cd ../../
+    10  cd ./
+    11  cd backupdir/
+    12  cd bakupdir
+    13  cd bakupdir/
+    14  cd C:\Users\arunc\OneDrive\Desktop\linux
+    15  cd dev
+    16  cd dev/
+    17  cd devops
+    18  cd devops/
+    19  cd home/
+    20  cd mobile
+    21  cd ops
+    22  cd .ssh/
+    23  cd Users/
+    24  cd USers
+    25  cd \Users\arunc\OneDrive\Desktop\linux
+    26  cp dev ops
+    27  cp devopsfile1.txt dev/
+    28  cp devopsfile1.txt devopsfile3.txt bakupdir
+    29  cp devopsfile3.txt dev/
+    30  cp history.txt linux
+    31  cp -r dev ops
+    32  delete dev
+    33  du -sh
+    34  du -sh*
+    35  exit
+    36  filter_executable_history
+    37  grep | less
+    38  history
+    39  history
+    40  history 10
+    41  history | awk '{$1="";
+    42  history | awk '{print
+    43  history | cat -n
+    44  history |cat -n
+    45  history |cat n
+    46  history -d 1
+    47  history -d 2
+    48  history | grep |
+    49  history | grep 'cat'
+    50  history | grep -E
+    51  history | grep ep
+    52  history | grep 'ls'
+    53  history | grep 'ls
+    54  history | grep 'ls'
+    55  history | grep 'mv'
+    56  history | grep 'mv'
+    57  history | grep tain
+    58  history >history.txt
+    59  history | ledd
+    60  history | less
+    61  history less
+    62  history >linux command.txt
+    63  history | more
+    64  history | 'sort -u'
+    65  hostname
+    66  ip
+    67  ip addr show
+    68  ipconfig
+    69  l
+    70  ls
+    71  ls bakupdir/
+    72  ls /dev
+    73  ls dev
+    74  ls dev/
+    75  ls dv
+    76  ls -l
+    77  ls -la
+    78  ls -lart
+    79  ls linux
+    80  ls linux/
+    81  ls /ops
+    82  ls ops/
+    83  mkdir dev
+    84  mkdir dev{1..10}
+    85  mkdir mobile
+    86  mkdir ops bakupdir
+    87  mv dev{1..10} ops
+    88  mv dev1 ops
+    89  mv dev{2..10} ops
+    90  mv dev ops
+    91  mv devopsfile2.txt dev/
+    92  mv devopsfile2.txt devops
+    93  mv devopsfile3.txt bakupdir
+    94  mv devopsfile3.txt devops
+    95  mv -r dev ops
+    96  mv *.txt ops/
+    97  mv .txt ops/
+    98  pwd
+    99  rm dev
+   100  rm dev1
+   101  rm dev{1..10}
+   102  rm dev{1..10} devops
+   103  rm devops devopsfile1.txt
+   104  rm devopsfile1
+   105  rm devopsfile{1..3}.txt
+   106  rm devopsfile3.txt
+   107  rm devopsfile4.txt
+   108  rm devopsfile5.txt
+   109  rm history.txt devops
+   110  rm mobile
+   111  rm mobile1.txt
+   112  rm -r dev{1..10}
+   113  rm -r history.txt devops
+   114  rm -r mobile
+   115  rm testfile1.txt
+   116  sort -u
+   117  sudo cp dev ops
+   118  sudo -i
+   119  sudo su -i
+   120  touch *
+   121  touch devopsfile1
+   122  touch devopsfile{1..3}.txt
+   123  touch devopsfile{1..5}.txt
+   124  touch devopsfile1.txt
+   125  touch /home/devops
+   126  touch mobile{1..5}.txt
+   127  touchpath
+   128  touch testfile1.txt
+   129  vagrant global-status
+   130  vim mobile1.txt
+   131  who
+   132  whoami
+
+
+
+  
+   

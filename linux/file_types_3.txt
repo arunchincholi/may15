@@ -1,0 +1,15 @@
+- normal files          ex:-rw-r--r--
+d:directory_file        ex:drwxr-xr-x 
+l:link_file             ex:lrwxrwxrwx
+c:special_file          ex:crw-rw----
+p:page
+
+
+crete directory : mkdir /dev/fttest/uattest/regressiontest/production    (not able to create so use -p)
+       so that :    mkdir -p /dev/fttest/uattest/regressiontest/production
+       vim  mkdir /dev/fttest/uattest/regressiontest/production/enviornments.txt
+       ln -s /dev/fttest/uattest/regressiontest/production/enviornments.txt  completepath  (link soft which_path to_which_directory)
+       mv dev/test/ft/uat/regression/production /tmp                                       (move source_path destination_path)
+       ls -ltra /opt                                                                       (longformat from_staartniing timr_reverse hidden_files_also absoulate_path_showing_list)
+
+        

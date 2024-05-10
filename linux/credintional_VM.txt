@@ -1,0 +1,14 @@
+[12:22 PM, 11/4/2023] 💛arunksc❤️: "ssh devops@192.168.1.121" for ubuntu user (start vm in virtual box) and connect in the  gitbash
+[12:24 PM, 11/4/2023] 💛arunksc❤️: "ip addre show" then we will get 1.121 i
+
+
+run vm>devops(username)>Arunksc@12345(passw)>ip addre show(this ip for connecting)
+go to gitbash >ssh username@ip
+
+❤️ssh devops@192.168.1.104-for ubuntu user (start vm in virtual box) and connect in the  gitbash
+❤️ssh centosuser/centosvm@ip(ip addr show ) you get ip of vm
+passwd:Arunksc@12345   same for both centos and ubuntu vm
+Arunksc@12345 Citrix password
+
+"C:\Program Files\Git\bin\bash.exe" "/c/Users/arunc/scrip/hell.sh"     
+this above is nned to add manadtory.s

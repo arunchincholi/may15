@@ -1,0 +1,20 @@
+cat /etc/passwd
+1.root@ubuntuvm:~# head -1 /etc/passwd
+root:x:0:0:root:/root:/bin/bash      :(root is username x:showdo file hold passwd encripted format, 0 is userid , 0 is the the group id,root is comment,/root:home directory where stored)
+**root user userid and group id is 0***
+
+root@ubuntuvm:~# grep devops /etc/passwd
+devops:x:1000:1000:arun:/home/devops:/bin/bash      (/bin/bash:shell login)
+
+rootuser,vagrantuser(devops),system_user(bin,sbin like): 3types users
+
+in /etc/passwd                                   :it will show the user id and group id (user information)
+cat /etc/group  and vim /etc/group
+/etc/group                                       : groups show(showing the groups information)
+passwd <username>                               :need to set new passwd if the expire
+useradd <username>                              :adding the user
+userdel <username>                              :deleting
+groupdel <groupname>                            :g deletig
+groupadd <groupname>                            :g adding
+su - <username> then pwd (showing that sangamm user)
+grep sangamma /etc/passwd

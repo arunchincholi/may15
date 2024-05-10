@@ -1,0 +1,42 @@
+ grep hi sample.txt                            :find the hi word in the sample.txt file
+  grep name village sample.txt                 : this is not possible only serch one word
+  grep -i hi *                                 : grep the all hi word in mentioned all files in that dir(folder) only that line completly that word heighlet(if not given star)
+  grep hi sample.txt | cat -n                  : grep hi in txt file with a number
+  grep -vi village sample.txt                  :it will grep all the lettors/words/content except village word(opposite of -i)
+  history | grep 'grep'                        :grep the history with the name grep 
+
+
+
+  less command------------
+  when:if you want to read the logs from page by page use less command (in less use only files names not history.)
+  vi logs>type all content upto 3 pages>save
+  less logs (it will show first page >
+  enter space button(next page)>
+  q(enter q for quit))
+
+  less <file_name> same for more also
+
+  more commands----------------------
+  its same as less but its shows the logs(lines of that file) in the percentage format(line by line not page by page)
+  more logs
+  press enter buton (to move the line by line)
+  q (q for exit)
+
+  tail & head-------------------
+  when:if you want to see the logs (lines from bottom and top)
+  tail -4 logs.txt                         :show the 4 lines from the bottom of this logs.txt file
+  head -4 logs.txt                         :Show the 4 lines from the Top of this logs.txt file
+  tail logs.txt                             :it will show the last 10 lines (counting from bottom) we didnt mentioned any number but take default as 10 line
+  head logs.txt                              : from starting line to 10th line (as default) without f is the only readable thing
+  tail -3f logs.txt                          :the file is showing the last 3 line from bottom and with write access ( i mean you can write something on that )
+-f very helpfull in troubleshooting servers(coz error in the logs)
+
+
+find command---------------------------
+find ops                                         : it will show all folder and files related to that ops  (find arun *)
+locate 
+ls -l ops/dev                                    : list of the files and folders in long format (realted to dev directory)
+
+
+  
+

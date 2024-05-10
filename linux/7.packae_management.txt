@@ -1,0 +1,76 @@
+1. tree command                                                               :it will show the foldeers and files in the form of tree structure
+ex:tree
+   root@ubuntuvm:~# tree
+.
+├── abhi
+├── arun        
+│   ├── arun_profile.txt
+│   ├── logs
+│   └── sample.txt
+├── devopsdir
+├── ravi
+├── sample2.txt
+└── snap
+    └── lxd
+        ├── 24322
+        ├── common
+        └── current -> 24322
+
+2. **intialy tree command not found so need to install tree package
+sudo apt-get update                                          (apt is package manager for ubuntu)
+sudo apt-get install tree
+
+3. tree --help         (it will show the all command related to tree)
+ tree -a            All files are listed.
+  -d            List directories only.
+  -l            Follow symbolic links like directories.
+  -f            Print the full path prefix for each file.
+  -x            Stay on current filesystem only.
+
+  apt install rpm -y   :to install rpm
+  apt remove/reinstall/search/ rpm -y                         :to remove package(rpm is package name like httpdapt  )
+  apt update                                                   :updating the package 
+apt:is packahe maager for ubuntu where as yum is for centos.
+
+
+ tree -p
+[drwxr-x---]  .
+├── [-rw-rw-r--]  abhi.txt
+├── [-rw-rw-r--]  aliya1.txt
+
+devops@ubuntuvm:~$ tree -u
+[devops  ]  .
+├── [devops  ]  abhi.txt
+├── [devops  ]  aliya1.txt
+├── [devops  ]  aliya2.txt
+
+
+devops@ubuntuvmtree -D
+[Dec 11 14:12]  .
+├── [Dec 11 14:03]  abhi.txt
+├── [Dec 11 14:12]  aliya1.txt
+├── [Dec 11 14:07]  aliya2.txt
+├── [Dec 11 13:15]  arulinux_docs
+├── [Dec 11 13:15]  arunlinux_docs
+
+tree --help
+
+servers-------------------------------------------------(how to start stop restart servres)
+apche2:is the web server ()
+root@ubuntuvm:~# sudo systemctl status apache2
+● apache2.service - The Apache HTTP Server
+     Loaded: loaded (/lib/systemd/system/apache2.service; enabled; vendor preset: enabled)
+     Active: active (running) since Sun 2023-11-12 18:24:09 UTC; 7min ago
+       Docs: https://httpd.apac
+
+1. If you want to install Apache HTTP Server, you can use the following command:
+sudo apt-get install apache2
+
+after install need to start and enable the web server:
+sudo systemctl start apache2
+sudo systemctl enable apache2
+systemctl restart apache2
+systemctl reload apache2
+systemctl status apache2
+
+*******if your doing any thing with folder(directory) use -r 

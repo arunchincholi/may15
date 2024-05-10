@@ -1,0 +1,9 @@
+sudo su -                                             :make it has root user
+after need to give permission.
+/name       :in esc mode serching name word in the file.
+
+passwd <username>                          :need to set new passwd once password expires
+ls -ld                                     :ls -ld is useful for displaying detailed information about a directory, 
+
+Q1) if normal user wants run root command and admin cant share root passwd as per complience what should do?
+ans:Ask admin to add your username in sudoers file

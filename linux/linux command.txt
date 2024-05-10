@@ -1,0 +1,163 @@
+    1  sudo apt update
+    2  sudo apt install openjdk-11-jdk -y
+    3  curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key | sudo tee /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+    4  echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]  https://pkg.jenkins.io/debian-stable binary/-sudo-tee \
+    5  sudo apt update
+    6  echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]https://pkg.jenkins.io/debian-stable binary/-sudo-tee \
+    7  /etc/apt/sources.list.d/jenkins.list>/dev/null
+    8  sudo apt-get install jenkins -y
+    9  sudo apt-get install jenkins
+   10  echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]  https://pkg.jenkins.io/debian-stable binary/-sudo-tee \
+   11  echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]   https://pkg.jenkins.io/debian-stable binary/   | sudo tee /etc/apt/sources.list.d/jenkins.list > /dev/null
+   12  sudo apt update
+   13  sudo apt-get install jenkins
+   14  systemctl status jenkins
+   15  id jenkins
+   16  sudo systemctl status jenkins
+   17  systemctl status jenkins
+   18  systemctl start jenkins
+   19  sudo cat /var/log/jenkins/jenkins.log
+   20  pwd
+   21  nano /etc/default/jenkins
+   22  systemctl restart jenkins
+   23  systemctl status jenkins
+   24  nano /etc/default/jenkins
+   25  systemctl restart jenkins
+   26  nano /etc/default/jenkins
+   27  systemctl restart jenkins
+   28  systemctl status jenkins
+   29  cat /var/lib/jenkins/secrets/initialAdminPassword
+   30  history
+   31  history
+   32  ls /usr/lib/jvm/
+   33  ll /usr/lib/jvm/
+   34  pwd
+   35  ls
+   36  ls -la
+   37  ssh -i Downloads/practice_jenkins1.pem ubuntu@172.31.8.25
+   38  ssh -i "practice_jenkins1.pem" ubuntu@ec2-13-233-100-16.ap-south-1.compute.amazonaws.com
+   39  ls
+   40  ls -lart
+   41  tree
+   42  sudo apt update  && sudo apt install tree
+   43  tree
+   44  apt install tree
+   45  syatemctl status tree
+   46  systemctl status tree
+   47  tree /path/to/directory
+   48  tree
+   49  du -sh *
+   50  pwd
+   51  ls -lart
+   52  free -h
+   53  df -h
+   54  cd snap
+   55  du -sh *
+   56  pwd
+   57  cd ../
+   58  pwd
+   59  sudo apt update && sudo apt install openjdk-11-jdk
+   60  ls
+   61  ls /usr/lib/jvm
+   62  history
+  [12:22 PM, 11/4/2023] 💛arunksc❤️: "ssh devops@192.168.1.121" for ubuntu user (start vm in virtual box) and connect in the  gitbash
+[12:24 PM, 11/4/2023] 💛arunksc❤️: "ip addre show" then we will get 1.121 i
+
+
+
+df -h | awk '{print $1, $4}'
+-gt  -eg 
+if []
+then
+else
+fi
+
+if[] then elif then else fi
+  
+   ls
+   ls -l
+   ls -lart
+   ls dev/
+   ls bakupdir/
+   ls ops/
+   history | grep 'ls'
+   history | grep 'cat' mv cp 
+   mv devopsfile2.txt dev/             (for the move we can use the -r coz its directory) -r for directory while rm, cp,mv
+   cp source_file destination_file  (you can move or copey more than one file also)
+   cd dirname
+   cat /vi-vim
+   touchpath
+   touch filename
+   touch devops{1..5}.txt
+   mkdir dev1{1..10}.txt
+history | less       (move the page you can type space bar and last q)
+vi or vim (press i write esc q or wq!)
+
+
+#########################################################################333
+#!/bin/bash
+
+# Check disk space usage of the 'apps' mount point
+disk_usage=$(df -h /mnt/apps | awk 'NR==2 { print $5 }')
+
+# Extract the percentage usage
+usage_percentage=${disk_usage%%%}
+
+# Remove the '%' sign from the percentage
+usage_percentage=${usage_percentage%%%}
+
+# Check if disk usage is above 80%
+if [ "$usage_percentage" -gt 80 ]; then
+    echo "Disk space usage is above 80%."
+
+    # Navigate to the 'apps/application' folder
+    cd /mnt/apps/application || exit
+
+    # Search for files with the name 'pos' and delete files older than 2 days, keeping only 2 newest files
+    find . -name 'pos*' -type f -mtime +2 -exec rm {} \;
+
+    # Optional: Print the remaining files after deletion
+    echo "Remaining files in 'apps/application' folder:"
+    ls -l
+else
+    echo "Disk space usage is below 80%."
+fi
+
+
+find . -name 'pos*' -type f -exec stat --format='%Y %n' {} + | sort -n -r | awk 'NR>3 {print $2}' | xargs rm -f
+##################################################################333
+
+#!/bin/bash
+
+# Check disk space usage of the 'apps' mount point
+disk_usage=$(df -h /mnt/apps | awk 'NR==2 { print $5 }')
+
+# Extract the percentage usage
+usage_percentage=${disk_usage%%%}
+
+# Remove the '%' sign from the percentage
+usage_percentage=${usage_percentage%%%}
+
+# Check if disk usage is above 80%
+if [ "$usage_percentage" -gt 80 ]; then
+    echo "Disk space usage is above 80%."
+
+    # Navigate to the 'apps/application' folder
+    cd /mnt/apps/application || exit
+
+    # List files with names like 'pos', 'partner', sorting by modification time and keeping only the newest 3 files
+    find . \( -name 'pos*' -o -name 'partner*' \) -type f -printf '%T@ %p\n' | sort -nr | head -n 3
+    or
+    find . \( -name 'pos*' -o -name 'partner*' \) -type f -printf '%T@ %p\n' | sort -n | awk 'NR>3 {print $0}'
+
+
+
+else
+    echo "Disk space usage is below 80%."
+fi
+
+
+
+  
+   
+ 

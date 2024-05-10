@@ -1,0 +1,13 @@
+vim arun.txt (file created and open in editing mode)
+i :insert 
+before inserting the editor mode in esc mode only 
+command execut in esc mode only:
+gg:cursor move the beganing of the page
+G: cursor move the last (end of page)
+w: to move cursor forward (word by word) where as b  is backward
+u: undo last change (word) only one undo
+U: undo previous line entire line(not word)
+yy:copy the line (where cursor placed that line )
+p:paste the copied lines to above and below where cursor places (like excel sheet row)
+dd: delete the line (placing cursor line) where as dw is the delete the word not the entire line ok.
+

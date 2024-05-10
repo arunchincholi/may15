@@ -1,0 +1,47 @@
+
+chown is change owenship of the file   (wethere root user,vagrant user or systemuser )
+chmod is change mode of the file wether read , write or executive
+
+root@ubuntuvm:~# ls -l
+drwxr-xr-x 2 root root 4096 Nov 11 10:49 abhi
+-rw-r--r-- 1 root root   46 Nov 11 10:42 sample2.txt
+drwx------ 3 root root 4096 Nov 11 10:37 snap
+
+
+
+1.drwxr-xr-x 2 root root 4096 Nov 11 10:49 abhi
+
+d                           :type of files(-normal,l link, c:special file type, d:directory file type)
+rwx                         : which are the permision is there for user(first 3 digits specifies owners permisiions)
+r-x                         :pwermision for groups                      (secomd 3 digits specifies group permission)
+r-x                         : for others                                (last 3 digits represent permission for others)
+2                           :2This is the number of links to the directory.
+ root                       : which type of user  (owner of the directory)
+root                        : root group  (directory owned by root group) or ( group owner.)
+ 4096                       : This is the size of the directory in bytes. Directories typically have a fixed size, and 4096 is a common value.
+ Nov                        :in which month directory modified (not created)
+ 11                         :in which date 
+ 10:49                      :what time
+ abhi                       :directory name (name of the directory)
+ Nov 11 10:49               :This is the timestamp of the directory's last modification.
+
+
+ useradd devops
+ chown -R devops
+R-recursive 
+
+
+changing permission -symbolic method.----------------
+*r-read, w-write, x-execute
+2.-rw-r--r-- 1 root root   46 Nov 11 10:42 sample2.txt for this txt root user have no permission to execute so add that permission
+ans:chmod u+x sample2.txt       u-user g-group, 0-others AND +x:adding execute permission -x:removing execute permission like others.
+chmod o-wx <dir_name>         :give the write and execute permission for others (u for user and g for groups)
+
+changing permission -Numeric method.----------------
+chmod -R 777 <directory_name>              :give the permission for user(all 3 permisiions access), group(all 3) and others also getting 3 permission that read, write and execute
+ 
+7=4+2+1     (read + write + execute)
+
+chmod -R 621(user_group_others) <directory_name>    :for user permission for read and write(6=4+2), for group only write permission(2 is ) and finalu for other permission for execute(1)
+chmod -R 755 qni       :for users all 3 access is there, for groups only read and execute, for others also only read and execute.
+chmode -R 770 qni    :give all 3 permission for user(owners<4 read,2 write,1 execute <rwx>), for groups also all and 0 for others (no permission for others <--->)

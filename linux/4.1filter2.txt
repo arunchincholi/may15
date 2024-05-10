@@ -1,0 +1,37 @@
+cut command--------------------------------------------
+cut -b 2 sample.txt                      : it will show the second sapce value from the sample.txt
+
+ex:
+root@ubuntuvm:~/arun# cat sample.txt
+hi this is arun chincholi from
+village:hagaratagi
+
+2. root@ubuntuvm:~/arun# cut -b 1 sample.txt
+h                                              :the answer h,<something lines 1st sapce values from the entire txt file because first letter 
+
+
+2.search and replace in vim----------------------------------------------------------------------
+open vi editor
+not in inserting mode type :%S/serching_word//type which_name_you_replace. 
+
+3.search and replace in vim------------------------------------------------
+  sed -i 's/arun/devu/g' arun_profile.txt                :serch the arun word and replace with devu globelly in the arun_profile.txt file.
+
+  ex:
+  root@ubuntuvm:~/arun# cat arun_profile.txt
+name:arun
+village:hagaratagi
+taluk:hunasagi
+karnatak
+india
+
+root@ubuntuvm:~/arun# sed -i 's/arun/devu/g' arun_profile.txt
+
+
+root@ubuntuvm:~/arun# cat arun_profile.txt
+name:devu
+village:hagaratagi
+taluk:hunasagi
+karnatak
+india
+

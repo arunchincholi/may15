@@ -1,0 +1,11 @@
+  rm -rf snap-private-tmp                  :remove the file forcrfully rm -rf 1011* (will delete 11th date fo;der)
+  cd ../                                   : one step back
+  du -sh *                                 : shows the which folders and files contents how much memory
+  echo "hi this is arun gm to all"         : printing the sentence what its there inside single or duble quote
+  uptime                                   :shows how long the system has been running or how much time has passed since the system last rebooted.
+  free -m                                  :shows memory space
+  free                                     :shows memory (im mb format as m g for GB)
+  free -g
+  df -h                                    :disk spaces shows with usage(in percentage format)
+ 
+  
